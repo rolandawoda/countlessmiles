@@ -98,7 +98,6 @@
   }
 
   &__about {
-    width: 1544.29px;
     height: 610.53px;
     background-image: url("../assets/contact_map.png");
     background-position: center;
@@ -125,13 +124,74 @@
     }
 
     &__video {
-      width: 100px;
-      height: 110px;
+      position: relative;
+      width: 400px;
+      height: 410px;
       background: #FFFFFF;
+      padding: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
       border-radius: 2px;
+      overflow: hidden;
+      overflow: hidden;
+
+      &__control {
+        width: 140px;
+        height: 140px;
+        background: rgba(239, 239, 239, 0.6);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__ctrller {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+      }
+    }
+
+    &__info {
+      padding-left: 50px;
     }
 
 
+  }
+
+  &__contact {
+    height: 360px;
+    top: 2355px;
+    background: #F2F8F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+      font-family: Campton;
+      font-size: 16px;
+      line-height: normal;
+      letter-spacing: -0.004em;
+      color: #039785;
+      text-decoration: none;
+      width: 220px;
+      height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+    }
   }
 }

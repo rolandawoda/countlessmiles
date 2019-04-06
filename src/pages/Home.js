@@ -3,6 +3,7 @@ import Hero from '../components/hero';
 import Card from '../components/card';
 import Review from '../components/review';
 import Wavy from '../components/wavy';
+import Footer from '../components/footer';
 
 class Home extends Component {
   constructor(props) {
@@ -57,12 +58,19 @@ class Home extends Component {
         <section className="home__about">
           <div className="home__about__video">
 
-          <img src={require("../assets/video.jpg")} />
+          <img src={require("../assets/video.jpg")} style={{width:"100%", height:"100%", objectFit:"cover"}}/>
+          <span className="home__about__video__control">
+            <span className="home__about__video__ctrller">
+              <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.2817 8.58754L2.55404 0.270694C1.46857 -0.439791 0 0.333383 0 1.60808V18.2209C0 19.5165 1.46857 20.2687 2.55404 19.5583L15.2817 11.2414C16.2394 10.6354 16.2394 9.21444 15.2817 8.58754Z" fill="black"/>
+              </svg>
+            </span>
+          </span>
 
           </div>
           <div className="home__about__info">
-              <h2 className="heading-secondary">About Us</h2>
-              <p className="paragraph">
+              <h2 className="heading-secondary" style={{marginBottom: "10px"}}>About Us</h2>
+              <p className="paragraph" style={{marginBottom: "25px"}}>
                 CountlessMiles is a technology-enabled travel startup and our <br /> 
                 mission is to establish the value narrative of Africans travelers <br /> 
                 globally..is a technology-enabled
@@ -70,6 +78,12 @@ class Home extends Component {
               <a href="#" className="home__about__button">Learn More</a>
           </div>
         </section>
+        <section className="home__contact">
+          <h2 className="heading-secondary" style={{marginBottom: "20px"}}>Do eu eiusmod reprehenderit?</h2>
+          <a href="#" className="home__contact__button" style={{marginBottom: "20px"}}>Start Planning</a>
+          <p className="">or contact us</p>
+        </section>
+        <Footer />
       </div>
     );
   }

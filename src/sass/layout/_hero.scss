@@ -1,0 +1,129 @@
+.hero {
+  height: 638px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to right,rgba(0, 42, 37, 0.5),rgba(0, 42, 37, 0.5)),url("../assets/Rectangle.png");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  padding-bottom: 40px;
+
+  &__main {
+  
+  }
+
+  &__heading {
+    position: relative;
+    width: 464px;
+    height: 111px;
+    font-family: Campton;
+    font-size: 42px;
+    line-height: 55px;
+    color: #FFFFFF;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 0px;
+      left: 0;
+      bottom: -20px;
+      border: 4px solid #FFFFFF;
+    }
+  }
+
+  &__text {
+    width: 497px;
+    height: 55px;
+    font-family: Campton;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 40px;
+    color: #FCFCFC;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #039785;
+    font-family: Campton;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border-radius: 2px;
+  }
+
+  &__right{
+    margin-left: 5px;
+  }
+
+  &__control {
+    &__inline {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__prev {
+      width: 34px;
+      height: 22px;
+      font-family: Campton;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+    &__progress {
+      position: relative;
+      display: inline-block;
+      width: 84px;
+      height: 0px;
+      border: 3px solid #ffffff;
+      margin: 0 5px;
+
+      &::before {
+        content: "";
+        border: 3px solid #039785;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        height: 100%;
+        width: 70%;
+      }
+    }
+
+  &__next {
+    width: 37px;
+    height: 22px;
+    font-family: Campton;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  &__count {
+    display: flex;
+    align-items: flex-start;    
+    width: 38px;
+    height: 28px;
+    font-family: Campton;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    &__total {
+      width: 23px;
+      height: 15px;
+      font-family: Campton;
+      font-size: 12px;
+      line-height: normal;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+    }
+  }
+  }
+}

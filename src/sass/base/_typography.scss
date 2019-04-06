@@ -1,0 +1,60 @@
+
+
+// .heading-primary {
+//   color: $color-white;
+//   text-transform: uppercase;
+//   margin-bottom: 6rem;
+
+//     &--main {
+//       display: block;
+//       font-size: 6rem;
+//       font-weight: 400;
+//       letter-spacing: 3.5rem;
+//       animation-name: moveInLeft;
+//       animation-duration: 1s;
+//       backface-visibility: hidden;
+
+//       @include respond(phone) {
+//         font-size: 5rem;
+//         letter-spacing: 1rem;
+//       }
+//   }
+  
+//   &--sub {
+//     display: block;
+//     font-size: 2rem;
+//     font-weight: 700;
+//     letter-spacing: 1.75rem;
+//     animation-name: moveInRight;
+//     animation-duration: 1s;
+//     @include respond(phone) {
+//       letter-spacing: .5rem;
+//     }
+//   }
+// }
+
+.heading-secondary {
+  font-family: Campton;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.4px;
+  color: #002A25;
+  letter-spacing: .2rem;
+  transition: all .2s;
+
+  // &:hover {
+  //   transform: skewY(2deg) skewX(15deg) scale(1.1);
+  //   text-shadow: .5rem 1rem 2rem rgba(0,0,0, .2);
+  // }
+}
+
+// .heading-tertiary {
+// }
+
+.paragraph {
+  font-family: Campton;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.4px;
+  color: #666666;
+}

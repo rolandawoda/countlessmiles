@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 70px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+
+
+  &__brand {
+    width: 208px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  &__menu {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    height: 20px;
+    text-decoration: none;
+    font-family: Brandon Grotesque;
+    font-size: 18px;
+    line-height: normal;
+    color: $color-white;
+  }  
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 46px;
+    left: 1116px;
+    top: 25px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    font-family: Campton;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}

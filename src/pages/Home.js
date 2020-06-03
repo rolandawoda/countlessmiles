@@ -4,16 +4,33 @@ import Card from '../components/card';
 import Review from '../components/review';
 import Wavy from '../components/wavy';
 import Footer from '../components/footer';
+import Form from '../components/form';
 
 class Home extends Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.state = {
+      isClose: false
+    }
   }
 
-  render(){
-    return (
-      <div className="home">
-        <Hero />
+  toggleClose = (e) => {
+    e.preventDefault();
+    this.setState(prevState => {
+      return {
+        isClose: !prevState.isClose
+      }
+    }
+    )
+  }
+
+  renderContemt = () => {
+    let content = "";
+
+    if(!this.state.isClose) {
+      content = (
+        <>
+        <Hero clicked={this.toggleClose}/>
         <section className="home__experience row">
           <div className="home__experience__text">
             <h2 className="heading-secondary" style={{marginBottom: "10px"}}>Experience Travel <br /> Differently</h2>
@@ -84,6 +101,19 @@ class Home extends Component {
           <p className="">or contact us</p>
         </section>
         <Footer />
+      </>
+      );
+    }else {
+      content =  <Form close={this.toggleClose} />;
+    }
+
+    return content;
+  }
+
+  render(){
+    return (
+      <div className="home">
+        {this.renderContemt()};
       </div>
     );
   }

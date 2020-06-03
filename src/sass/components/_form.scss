@@ -1,0 +1,138 @@
+.form {
+  font-family: Campton;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #039785;
+  padding-top: 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 73px;
+    margin-bottom: 25px;
+
+  }
+
+  &__container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-family: Campton;
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+  }
+
+  &__cancel {
+    cursor: pointer;
+  }
+
+  &__group{
+      font-size: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      &:not(:last-child){
+        margin-bottom: 20px
+      }
+  }
+
+  &__label {
+    font-family: Campton;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FCFCFC;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    background: transparent;
+    border: 1px solid #FCFCFC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-family: Campton;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 10px;
+  }
+
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+
+    & .submit {
+      font-family: Campton;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      margin-top: 30px;
+      cursor: pointer;
+      
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    & .next {
+      font-family: Campton;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    & .back {
+      font-family: Campton;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgb(226, 208, 208);
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  &-enter-active {
+    position: absolute;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+
+
+  &-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  &-exit-active {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 500ms;
+  }
+
+  &__animateIn {
+    animation-name: slideIn;
+    animation-duration: 500ms;
+  }
+}

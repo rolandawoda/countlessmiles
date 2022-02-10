@@ -16,7 +16,6 @@ BREAK POINTS FOR THE MEDIA QUERY
 
 
 @mixin respond( $breakpoint) {
-
   @if $breakpoint == phone {    
     @media(max-width: 37.5em) { @content };  //600px
   }

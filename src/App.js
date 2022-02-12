@@ -6,7 +6,7 @@ import "./sass/main.scss";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="countlessmiles">
         <Routes>
           <Route exact path="/" element={<Home/>} />
         </Routes>
